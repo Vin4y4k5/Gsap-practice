@@ -1,0 +1,54 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#page1{
+  height: 20vh;
+  width: 100%;
+  background-color: cornsilk;
+}
+
+#page2{
+  height: 100vh;
+  width: 100%;
+  background-color: orange;
+  padding-top: 12vw;
+}
+
+#page2 h1{
+  font-size: 4vw;
+  font-family: PP Woodland;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  line-height: 4vw;
+  letter-spacing: 0.5vw;
+}
+
+#page3{
+  height: 20vh;
+  width: 100%;
+  background-color: cornsilk;
+}
+
+@media(max-width:600px){
+
+  #page2{
+    padding-top: 50vw;
+  }
+
+  #page2 h1{
+    font-size: 10vw;
+    line-height: 9vw;
+  }
+
+}

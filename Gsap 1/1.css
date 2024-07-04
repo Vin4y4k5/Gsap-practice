@@ -1,0 +1,160 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(6, 6, 6);
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  margin-top: auto;
+}
+
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4vw;
+  padding: 0 2vw;
+  width: 100%;
+}
+
+#nav-2{
+  display: flex;
+  width: 28%;
+  gap: 3vw;
+
+}
+
+#nav h3{
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+#main h1{
+  font-size: 11vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 9vw;
+  padding: 0 5vw;
+  position: relative;
+  z-index: 10;
+
+}
+
+/* css bug in :nth-child() is that for it to use we have to choose the second option */
+
+#main h1:nth-child(2){
+  margin-top: 10vw;
+}
+
+#main h1:nth-child(3){
+  text-align: center;
+}
+
+#main h1:nth-child(4){
+  text-align: center;
+}
+
+footer{
+  height: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw ;
+  bottom: 0;
+}
+
+footer h3{
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+footer h3:nth-child(2){
+  text-align: center;
+  line-height: 1.2vw;
+}
+
+img{
+  height: 25vw;
+  width: 20vw;
+  object-fit: cover;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  border-radius: 1vw;
+}
+
+#img1{
+  rotate: 20deg;
+}
+
+#img2{
+  rotate: 10deg;
+}
+
+
+@media(max-width:600px){
+
+  #nav{
+    height: 10vw;
+  }
+  
+  #nav-2{
+    display: none;
+  
+  }
+  
+  #nav h3{
+    font-size: 3vw;
+  }
+
+  #main h1{
+    font-size: 11vw;
+  }
+  
+  #main h1:nth-child(2){
+    margin-top: 80vw;
+  }
+
+  img{
+    height: 50vw;
+    width: 40vw;
+  }
+
+  footer{
+    height: 10vw;
+  }
+
+  footer h3{
+    display: none;
+  }
+
+  footer #num{
+    display: inline;
+    font-size: 3vw;
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
+  }
+  
+}
